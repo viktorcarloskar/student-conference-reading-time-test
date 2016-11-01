@@ -1,0 +1,22 @@
+{
+  "name": "student_conference",
+  "version": "0.0.1",
+  "description": "Test of emojis in student conference",
+  "main": "-",
+  "dependencies": {
+    "babel-cli": "^6.18.0",
+    "express": "^4.14.0",
+    "nodemon": "^1.11.0",
+    "pug": "^2.0.0-beta6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "-",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "Emojis"
+  ],
+  "author": "@viktorcarloskar",
+  "license": "ISC"
+}
