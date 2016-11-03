@@ -1,6 +1,56 @@
-p #{name}'s Pug source code!
+include head.pug
+include mixins.pug
 
--
-  texts = ["Hi world", "hello world"]
-each text in texts
-  li= text
+input(type="hidden", id="group-hidden", value=group)
+div(class='pages')
+  div(class='page')
+    div(class='card start')
+      h3= "Hi! "
+      p= "Thank you for choosing to participate in this study!"
+      button(onclick='nextPage()') Let's get going!
+  div(class='page')
+    div(class='card start green-button')
+      h3= "Information"
+      div(class="scrollable")
+        p= "First things first. We are NOT testing YOU! We are simply testing aspects of modern typography, so please don’t feel any pressure to “perform well”. All of the records of this study will be kept private. In any sort of report we make public we will not include any information that will make it possible to identify you. The result will rely on doing statistical analysis of a large dataset."
+        p= "And remember, taking part in this study is completely voluntary. You may skip any questions that you do not want to answer."
+        p= "Now, please take the time and take following tasks seriously. Thank you!"
+      button(onclick='nextPage()', class="green") I got it!
+  div(class='page')
+    div(class='card start green-button')
+      h3= "Information"
+      p= "The information you provide is going to be handled anonymously"
+      .question
+        label(for="age")= "Age"
+        input(type="number", id="age", placeholder="Answer...", class="question_input")
+      .question
+        label(for="occupation")= "Current occupation"
+        input(type="text", id="occupation", placeholder="Answer...", class="question_input")
+      .question
+        label(for="platform")= "What mobile operating system do you use?"
+        input(type="text", id="platform", placeholder="Answer...", class="question_input")
+      .question
+        label(for="english")= "English proficiency"
+        input(type="range" min="1" max="5" value="3" id="english" step="1" list="volsettings" class="question_input" onchange="englishSkillChanged(this.value)")
+        datalist(id="volsettings")
+          option(value='1') 1
+          option(value='2') 2
+          option(value='3') 3
+          option(value='4') 4
+          option(value='5') 5
+        #english-skill Average
+
+      button(onclick='nextPage()', class="green") Look's good!
+  -var textNumber = 1
+  each page, index in pages
+    div(class='page page-' + index)
+      div(class='card')
+        if page.type == 'text'
+          +text(page, textNumber, group)
+          -textNumber++
+        else if page.type == 'form'
+          +form(page, (textNumber-1), group)
+  div(class='page')
+    div(class='card end green-button')
+      p= "Thank you for your participation!"
+      button(onclick='done(' + group + ')') Done

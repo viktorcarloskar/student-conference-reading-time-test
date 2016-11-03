@@ -1,0 +1,168 @@
+[
+  {
+    "title": "Text 1",
+    "questions": [
+      {
+        "title": "What demographic/occupation is mentioned the text?",
+        "type": ""
+      },
+      {
+        "title": "What did you interpret the emoji “☝️” as?",
+        "type": "group2"
+      },
+      {
+        "title": "What did you interpret the emoji “🏃” as?",
+        "type": "group2"
+      },
+      {
+        "title": "What did you interpret the emoji “🍳” as?",
+        "type": "group2"
+      }
+    ]
+  },
+  {
+    "title": "Text 2",
+    "questions": [
+      {
+        "title": "What typically swedish alcoholic drink did the text speak about?",
+        "type": ""
+      },
+      {
+        "title": "What did you interpret the emoji “🍷” as?",
+        "type": "group1"
+      },
+      {
+        "title": "What did you interpret the emoji “🍇” as?",
+        "type": "group1"
+      },
+      {
+        "title": "What did you interpret the emoji “🍒” as?",
+        "type": "group1"
+      }
+    ]
+  },
+  {
+    "title": "Text 3",
+    "questions": [
+      {
+        "title": "Which country was organized?",
+        "type": ""
+      },
+      {
+        "title": "What did you interpret the emoji “☝️” as?",
+        "type": "group2"
+      },
+      {
+        "title": "What did you interpret the emoji “🌎” as?",
+        "type": "group2"
+      }
+    ]
+  },
+  {
+    "title": "Text 4",
+    "questions": [
+      {
+        "title": "In what country is the pumpkin popular?",
+        "type": ""
+      },
+      {
+        "title": "What did you interpret the emoji “🎃” as?",
+        "type": "group1"
+      },
+      {
+        "title": "What did you interpret the emoji “🍂” as?",
+        "type": "group1"
+      },
+      {
+        "title": "What did you interpret the emoji “❄️” as?",
+        "type": "group1"
+      }
+    ]
+  },
+  {
+    "title": "Text 5",
+    "questions": [
+      {
+        "title": "Who will France take advantage of moving from the UK?",
+        "type": ""
+      },
+      {
+        "title": "What did you interpret the emoji “🚢” as?",
+        "type": "group2"
+      },
+      {
+        "title": "What did you interpret the emoji “🌍” as?",
+        "type": "group2"
+      }
+    ]
+  },
+  {
+    "title": "Text 6",
+    "questions": [
+      {
+        "title": "Where was her family from?",
+        "type": ""
+      },
+      {
+        "title": "What did you interpret the emoji “🍺” as?",
+        "type": "group1"
+      }
+    ]
+  },
+  {
+    "title": "Text 7",
+    "questions": [
+      {
+        "title": "Who got the cheaper flights, Norwegians or Americans? ",
+        "type": ""
+      },
+      {
+        "title": "What did you interpret the emoji “💵” as?",
+        "type": "group2"
+      }
+    ]
+  },
+  {
+    "title": "Text 8",
+    "questions": [
+      {
+        "title": "What do they enjoy doing in Spain?",
+        "type": ""
+      },
+      {
+        "title": "What did you interpret the emoji “🚶” as?",
+        "type": "group1"
+      }
+    ]
+  },
+  {
+    "title": "Text 9",
+    "questions": [
+      {
+        "title": "What is illegal to do on french train platforms after a train has arrived?",
+        "type": ""
+      },
+      {
+        "title": "What did you interpret the emoji “✅” as?",
+        "type": "group2"
+      },
+      {
+        "title": "What did you interpret the emoji “🚂” as?",
+        "type": "group2"
+      }
+    ]
+  },
+  {
+    "title": "Text 10",
+    "questions": [
+      {
+        "title": "In what country did the mini-summit take place?",
+        "type": ""
+      },
+      {
+        "title": "What did you interpret the emoji “🏝” as?",
+        "type": "group1"
+      }
+    ]
+  }
+]

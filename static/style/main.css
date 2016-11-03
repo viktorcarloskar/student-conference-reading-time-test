@@ -1,0 +1,149 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:focus {
+    outline: none;
+}
+
+body {
+  background-color: #ECF0F1;
+  height: 100%;
+  font-family: "Times New Roman";
+}
+h1, h2, h3, h4 {
+  font-family: 'Montserrat';
+  font-weight: 700;
+}
+h3 {
+  font-size: 28px;
+}
+.pages {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  overflow: hidden;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.page {
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding: 20px;
+  height: 100%;
+  transition: transform 400ms cubic-bezier(0.625, 0.125, 0.305, 0.875);
+}
+.page .card {
+  position: relative;
+  background-color: #fafafa;
+  border-radius: 10px;
+  padding: 30px;
+  font-size: 20px;
+  line-height: 150%;
+  height: 100%;
+}
+.page .card .prompt {
+  background-color: #fafafa;
+  position: absolute;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  top:0;
+  left: 0;
+  z-index: 1000;
+  opacity: 1;
+  transition: all 100ms cubic-bezier(0.625, 0.125, 0.305, 0.875)
+}
+.page .card .prompt p:first-child, .page .card.end p:first-child {
+  font-size: 26px;
+  line-height: 150%;
+  margin-top: 50%;
+  font-weight: bold;
+}
+.page .card .scrollable {
+  max-height: 80%;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.page .card .prompt, .page .card.start, .page .card.end {
+  font-family: 'Lato';
+}
+
+.page .card .prompt.hidden {
+  opacity: 0;
+}
+.page .card .prompt.disabled {
+  display: none;
+}
+.page .card p:first-child {
+  margin-top: 0;
+}
+.page .card h3:first-child {
+  margin-top: 0;
+}
+.page .card .question {
+  width: 100%;
+  margin-bottom: 20px;
+  color: #6C7A89;
+  font-size: 16px;
+  font-family: 'Lato';
+}
+.page .card .question input {
+  width: 100%;
+  border: 0px solid #fafafa;
+  border-bottom: 3px solid #6C7A89;
+  background-color: transparent;
+  font-size: 24px;
+  line-height: 160%;
+  font-family: 'Lato';
+  transition: border 100ms cubic-bezier(0.625, 0.125, 0.305, 0.875);
+}
+.page .card .question input:focus {
+  border-bottom: 3px solid #22A7F0;
+}
+.page .card #english-skill {
+  margin-top: -20px;
+}
+.page .card button {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60vw;
+  height: 50px;
+  background-color: #22A7F0;
+  border: 0px solid #fafafa;
+  font-size: 22px;
+  color: #fafafa;
+  border-radius: 25px;
+  font-family: 'Lato';
+}
+.page .card .prompt button, .page .card.green-button button {
+  background-color: #26A65B;
+}
+
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-extrabold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/lato-regular-webfont.woff2') format('woff2'),
+         url('../fonts/lato-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
