@@ -74,6 +74,15 @@ h3 {
   overflow-y: scroll;
   position: relative;
 }
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 6px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
 
 .page .card .prompt, .page .card.start, .page .card.end {
   font-family: 'Lato';

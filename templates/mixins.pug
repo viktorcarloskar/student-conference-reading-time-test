@@ -14,8 +14,8 @@ mixin text(page, index, group)
     p= page.group2
   div(class="prompt prompt_" + index, id="prompt_" + index)
     if index == 1
-      p= "Click \"Go!\" when you are ready to read your first text, please only read the text once"
+      p= "Click \"Go!\" when you are ready to read your first text, just read the text once, please."
     else
-      p= "Click Go! when you are ready to read your next text, and please, only read the text once"
+      p= "Click Go! when you are ready to read your next text, just read the text once, please."
     button(onclick='startTime(' + index + ', \"prompt_' + index + '\")') Go!
   button(onclick='nextPage(); stopTime(' + index + ')') Done
